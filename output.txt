@@ -1,0 +1,43 @@
+###[ Ethernet ]### 
+  dst       = ff:ff:ff:ff:ff:ff
+  src       = 00:00:00:00:00:00
+  type      = IPv4
+###[ IP ]### 
+     version   = 4
+     ihl       = None
+     tos       = 0x0
+     len       = None
+     id        = 1
+     flags     = 
+     frag      = 0
+     ttl       = 64
+     proto     = udp
+     chksum    = None
+     src       = 192.168.1.16
+     dst       = 192.168.1.16
+     \options   \
+###[ UDP ]### 
+        sport     = 2123
+        dport     = 2123
+        len       = None
+        chksum    = None
+###[ GTP v2 Header ]### 
+           version   = 2
+           P         = 0
+           T         = 0
+           MP        = 0
+           SPARE1    = 0
+           SPARE2    = 0
+           gtp_type  = echo_request
+           length    = 9
+           seq       = 12345
+           SPARE3    = 0
+###[ GTPv2 Echo Request ]### 
+              \IE_list   \
+               |###[ IE Recovery Restart ]### 
+               |  ietype    = Recovery Restart
+               |  length    = 1
+               |  CR_flag   = 0
+               |  instance  = 0
+               |  restart_counter= 17
+
