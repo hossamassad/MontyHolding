@@ -10,3 +10,6 @@ interview assignement number 3 sending a GTP request using UDP protocol for a gi
 # a list of clients, we will fill this in the upcoming loop
 # for each response, append ip and mac address to `clients` list
 # print clients
+#input the iface
+#select the ip
+#send gtpv2 Echo Request message
